@@ -77,6 +77,7 @@
     margin-top: 10px;
     border: 1px solid #A88734;
     cursor: pointer;
+    color: #111111;
 }
 
 .login__signInBtn:hover {
@@ -124,10 +125,17 @@
     margin-top: 10px;
     border-color: #a9a9a9;
     background: linear-gradient(to bottom, #f7f8fa, #e7e9ec);
+    color: #111111;
 }
 
 .login__registerBtn:hover {
     background: linear-gradient(to bottom, #e7eaf0, #d9dce1);
+}
+
+.login__signInBtn:active,
+.login__registerBtn:active {
+    border-color: #e77600;
+    box-shadow: 0 0 3px 2px rgb(228 121 17 / 50%);
 }
 
 .login__bottom {

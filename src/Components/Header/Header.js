@@ -2,7 +2,6 @@ import React from "react";
 import "./Header.css";
 import SearchRoundedIcon from "@mui/icons-material/SearchRounded";
 import ShoppingBasketIcon from "@mui/icons-material/ShoppingBasket";
-import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
 import { Link } from "react-router-dom";
 import { useStateValue } from "../../StateProvider";
 import { auth } from "../../firebase";
@@ -33,11 +32,11 @@ function Header() {
 
       <div className="header__nav">
         <Link to={!user && "/login"} className="header__link">
-          <div onClick={handleAuthentication} className="header__option">
-            <span className="header__optionLineOne">
+          <div onClick={handleAuthentication} className="header__optionUser">
+            <span className="header__optionUserLineOne">
               Hello, {user ? user.email : "Guest"}
             </span>
-            <span className="header__optionLineTwo">
+            <span className="header__optionUserLineTwo">
               {user ? "Sign Out" : "Sign In"}
             </span>
           </div>
@@ -56,15 +55,9 @@ function Header() {
         <Link className="header__link" to="/checkout">
           <div className="header__optionBasket">
             <ShoppingBasketIcon />
-            <span className="header__optionLineTwo header__basketCount">
-              {cart?.length}
-            </span>
+            <span className="header__basketCount">{cart?.length}</span>
           </div>
         </Link>
-      </div>
-
-      <div className="header__menu">
-        <MenuRoundedIcon />
       </div>
     </div>
   );
