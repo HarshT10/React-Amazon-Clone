@@ -1,0 +1,182 @@
+.login {
+    min-height: 100vh;
+    background-color: #ffffff;
+}
+
+.login__top {
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login__logo {
+    margin: 20px 0;
+    width: 100px;
+    object-fit: contain;
+}
+
+.login__container {
+    width: 300px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    border: 1px solid #d3d3d3;
+    padding: 30px;
+}
+
+.login__container>h1 {
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.login__container>form>h5 {
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.login__container>form>input {
+    height: 30px;
+    margin-bottom: 10px;
+    width: 100%;
+    background-color: #ffffff;
+    border: 1px solid #a7a7a7;
+    border-radius: 4px;
+    text-indent: 7px;
+    font-size: 15px;
+}
+
+.login__container>form>input:focus {
+    outline: none;
+    border-color: #e77600;
+    box-shadow: 0 0 3px 2px rgb(228 121 17 / 50%);
+}
+
+.login__container>p {
+    margin-top: 15px;
+    font-size: 12px;
+}
+
+.login__container>p>span {
+    color: #0066c0;
+}
+
+.login__container>p>span:hover {
+    color: #c45500;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.login__signInBtn {
+    background: linear-gradient(to bottom, #F9E7BA, #EEBA34);
+    border-radius: 2px;
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+    border: 1px solid #A88734;
+    cursor: pointer;
+}
+
+.login__signInBtn:hover {
+    background: linear-gradient(to bottom, #f5d78e, #eeb933);
+}
+
+.login__divider {
+    text-align: center;
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 7px;
+    line-height: 0;
+}
+
+.login__divider>p {
+    line-height: 1;
+    font-size: 12px;
+    color: #767676;
+    background-color: #ffffff;
+    padding: 0 8px;
+    z-index: 2;
+    position: relative;
+    display: inline-block;
+}
+
+.login__divider::after {
+    content: "";
+    width: 100%;
+    background-color: transparent;
+    display: block;
+    height: 1px;
+    position: absolute;
+    border-top: 1px solid #e7e7e7;
+    top: 50%;
+    margin-top: -1px;
+    z-index: 1;
+}
+
+.login__registerBtn {
+    cursor: pointer;
+    border-radius: 2px;
+    width: 100%;
+    height: 30px;
+    border: 1px solid;
+    margin-top: 10px;
+    border-color: #a9a9a9;
+    background: linear-gradient(to bottom, #f7f8fa, #e7e9ec);
+}
+
+.login__registerBtn:hover {
+    background: linear-gradient(to bottom, #e7eaf0, #d9dce1);
+}
+
+.login__bottom {
+    margin-top: 26px;
+}
+
+.login__bottomDivider {
+    height: 44px;
+    margin-bottom: -18px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .14), rgba(0, 0, 0, .03) 3px, transparent);
+    z-index: 0;
+}
+
+.login__bottomDivider::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 44px;
+    background-color: transparent;
+    background: linear-gradient(to right, #ffffff, rgba(255, 255, 255, 0), #ffffff);
+    z-index: 1;
+}
+
+.login__bottomLineOne {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.login__bottomLineOne>p {
+    font-size: 12px;
+    color: #0066c0;
+}
+
+.login__bottomLineOne>p:hover {
+    color: #c45500;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.login__bottomLineTwo>p {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 15px;
+    color: #555555;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 400px) {
+    .login__container {
+        width: 240px;
+    }
+}

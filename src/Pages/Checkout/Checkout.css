@@ -1,0 +1,41 @@
+.checkout {
+    display: flex;
+    max-width: 1500px;
+    margin: 0 auto;
+    gap: 10px;
+    padding: 20px 10px;
+}
+
+.checkout__left {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.checkout__ad {
+    width: 100%;
+}
+
+.checkout__title {
+    padding: 10px;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+.checkout__user {
+    padding: 10px;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+    .checkout {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .checkout__left {
+        order: 1;
+    }
+}
