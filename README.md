@@ -3,7 +3,7 @@
 - Login & Register feature
 - Shopping Cart functionality
 
-![Badge](https://img.shields.io/badge/Firebase-Link-green) [Firebase](https://clone-fcd24.web.app/)
+![Badge](https://img.shields.io/badge/Firebase-Link-green) [Firebase](https://clone-fcd24.firebaseapp.com/)
 
 ---
 
