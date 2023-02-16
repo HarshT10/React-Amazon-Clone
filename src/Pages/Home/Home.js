@@ -1,17 +1,15 @@
 import React from "react";
 import "./Home.css";
 import Product from "../../Components/Product/Product";
+import UncontrolledExample from "../../Components/Carousel/Carousel";
 
 function Home() {
   return (
     <div className="home">
       <div className="home__container">
         <div className="home__imageWrapper">
-          <img
-            className="home__image"
-            src="https://m.media-amazon.com/images/I/61vFcsM04CL._SX3000_.jpg"
-            alt="Hero"
-          />
+          {/* <img className="home__image" src="" alt="Hero" /> */}
+          <UncontrolledExample />
         </div>
 
         <div className="home__row">

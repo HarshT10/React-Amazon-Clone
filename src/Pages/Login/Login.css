@@ -17,7 +17,7 @@
 }
 
 .login__container {
-    width: 300px;
+    width: 350px;
     height: fit-content;
     display: flex;
     flex-direction: column;
@@ -55,7 +55,7 @@
 }
 
 .login__container>p {
-    margin-top: 15px;
+    margin-top: 15px !important;
     font-size: 12px;
 }
 
@@ -78,6 +78,7 @@
     border: 1px solid #A88734;
     cursor: pointer;
     color: #111111;
+    font-size: 14px;
 }
 
 .login__signInBtn:hover {
@@ -126,6 +127,7 @@
     border-color: #a9a9a9;
     background: linear-gradient(to bottom, #f7f8fa, #e7e9ec);
     color: #111111;
+    font-size: 14px;
 }
 
 .login__registerBtn:hover {
@@ -185,6 +187,6 @@
 
 @media only screen and (min-width: 320px) and (max-width: 400px) {
     .login__container {
-        width: 240px;
+        width: 100%;
     }
 }

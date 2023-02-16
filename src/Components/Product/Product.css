@@ -6,15 +6,21 @@
     margin: 10px;
     padding: 20px;
     width: 100%;
-    max-height: 550px;
-    min-width: 100px;
     background-color: #ffffff;
-    z-index: 1;
-    cursor: pointer;
+    z-index: 100;
+    transition: ease-in .2s;
+}
+
+p {
+    margin: 0 !important;
+}
+
+.product:hover {
+    transform: scale(101.5%);
+    box-shadow: 5px 6px 15px 5px rgba(0, 0, 0, .2);
 }
 
 .product__title {
-    cursor: text;
     font-weight: 500;
 }
 
@@ -31,7 +37,6 @@
 }
 
 .product__price {
-    cursor: text;
     margin-top: 5px;
     font-size: 1.1rem;
     font-weight: 700;
@@ -46,7 +51,6 @@
 }
 
 .product__rating {
-    cursor: text;
     display: flex;
     font-size: 0.85rem;
     margin-top: 5px;
@@ -62,10 +66,12 @@
     cursor: pointer;
     box-shadow: 0 2px 5px 0 rgb(213 217 217 / 50%);
     border-radius: 100px;
+    transition: ease-in .2s;
 }
 
 .product>button:hover {
     background-color: #F7CA00;
+    transform: translateY(-10%);
 }
 
 @media only screen and (min-width: 320px) and (max-width: 768px) {
