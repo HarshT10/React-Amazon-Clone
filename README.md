@@ -2,8 +2,10 @@
 
 - Login & Register feature
 - Shopping Cart functionality
+- Integrated Stripe for Payments
+- Full E-Commerce Functionality
 
-![Badge](https://img.shields.io/badge/Firebase-Link-green) [Netlify]()
+![Badge](https://img.shields.io/badge/Firebase-Link-green) [Netlify](https://amazon-clone-harshcodes.netlify.app/)
 
 ---
 
@@ -22,6 +24,10 @@
 - Firebase Authentication
 
 - Mobile Responsiveness
+
+- Express
+
+- Firebase Functions
 
 - Flexbox
 
