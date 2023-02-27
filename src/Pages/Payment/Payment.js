@@ -7,10 +7,11 @@ import { CardElement, useElements, useStripe } from "@stripe/react-stripe-js";
 import CurrencyFormat from "react-currency-format";
 import { getCartTotal } from "../../Reducer";
 import axios from "../../axios.js";
+import { db, doc, setDoc } from "../../firebase";
 
 function Payment() {
   const navigate = useNavigate();
-  const [{ cart, user }] = useStateValue();
+  const [{ cart, user }, dispatch] = useStateValue();
 
   const stripe = useStripe();
   const elements = useElements();
@@ -50,11 +51,34 @@ function Payment() {
       .then(({ paymentIntent }) => {
         //paymentIntent = payment confirmation
 
+        // firebase firestore V9
+        const orderRef = doc(
+          db,
+          "users",
+          user?.uid,
+          "orders",
+          paymentIntent.id
+        );
+
+        setDoc(
+          orderRef,
+          {
+            cart: cart,
+            amount: paymentIntent.amount,
+            created: paymentIntent.created,
+          },
+          { merge: true }
+        );
+
         setSucceeded(true);
         setError(null);
         setProcessing(false);
 
-        navigate("/orders", {replace:true});
+        dispatch({
+          type: "EMPTY_CART",
+        });
+
+        navigate("/orders", { replace: true });
       });
   };
 

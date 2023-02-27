@@ -15,7 +15,7 @@
     gap: 5px;
 }
 
-.subtotal>button {
+.subtotal>.subtotal__btn>button {
     background-color: #ffd814;
     border-radius: 7px;
     width: 100%;
@@ -27,7 +27,7 @@
     font-size: 14px;
 }
 
-.subtotal>button:hover {
+.subtotal>.subtotal__btn>button:hover {
     background-color: #F7CA00;
 }
 

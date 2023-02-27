@@ -34,11 +34,37 @@
     flex: 0.8;
 }
 
+.payment__details>form {
+    max-width: 400px;
+}
+
+.payment__details>form>div>p {
+    padding-bottom: 20px;
+}
+
 .payment__stripe {
     width: 100%;
     display: flex;
-    align-items: center;
 }
+
+.payment__details>form>div>button {
+    background-color: #ffd814;
+    border: 1px solid;
+    border-color: #fcd200;
+    color: #111111;
+    width: 100%;
+    padding: .5em;
+    font-size: .9rem;
+    cursor: pointer;
+    box-shadow: 0 2px 5px 0 rgb(213 217 217 / 50%);
+    border-radius: 100px;
+    transition: ease-in .2s;
+}
+
+.payment__details>form>div>button:hover {
+    background-color: #F7CA00;
+}
+
 
 @media only screen and (min-width: 320px) and (max-width: 768px) {
     .payment__section:first-of-type {
@@ -54,4 +80,9 @@
     .payment__details {
         padding: 15px 0;
     }
+
+    .payment__details>form {
+        max-width: 100%;
+    }
+
 }

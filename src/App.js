@@ -9,6 +9,7 @@ import Home from "./Pages/Home/Home";
 import Checkout from "./Pages/Checkout/Checkout";
 import Login from "./Pages/Login/Login";
 import Payment from "./Pages/Payment/Payment";
+import Orders from "./Pages/Orders/Orders";
 
 //Components
 import Header from "./Components/Header/Header";
@@ -44,6 +45,17 @@ function App() {
     <Router>
       <div className="App">
         <Routes>
+          <Route
+            exact
+            path="/orders"
+            element={
+              <>
+                <Header />
+                <Orders />
+              </>
+            }
+          ></Route>
+
           <Route
             exact
             path="/login"
