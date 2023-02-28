@@ -4,8 +4,15 @@
 - Shopping Cart functionality
 - Integrated Stripe for Payments
 - Full E-Commerce Functionality
+- Spam "4 & 2" in the card details to complete the order.
 
-![Badge](https://img.shields.io/badge/Firebase-Link-green) [Netlify](https://amazon-clone-harshcodes.netlify.app/)
+![Dummy Card Details](src/images/card-details.png)
+
+---
+
+![Badge](https://img.shields.io/badge/Netlify-Link-green)
+
+[Click Here](https://amazon-clone-harshcodes.netlify.app/)
 
 ---
 
@@ -23,19 +30,21 @@
 
 - Firebase Authentication
 
+- Firebase Functions
+
 - Mobile Responsiveness
 
 - Express
 
-- Firebase Functions
+- React Bootstrap
 
-- Flexbox
+- Axios
 
 ---
 
 ## How much did it take to build this Project?
 
-- It took me around 3 days to make this project. I'm still working on it and will be updating it.
+- It took me around a week to make this project.
 
 ---
 
